@@ -15,33 +15,37 @@
 </head>
 
 <body>
-    <h1>Crystals Collector Game</h1>
-    <p>Click on the crystals to start the game</p>
-    
+<div class="container">
+    <div class="jumbotron" style="background-color: purple; color: white;">
+        <h1 class=" text-center display-4"><strong>Crystal Collector!</strong></h1>
+        <hr class="my-4" style="background-color: white;">
+        <p class="text-center">Click on the crystals to start the game</p>
+    </div>
 
-    <!-- <div class="main-container"> -->
+    <div class="row">
+    <div class="col-lg-8">
         <div id="crystals">
-                <button type="button" class="btn btn-primary btn-lg"> <img class="crystal-image" src="assets/images/crystals.jpg" alt="crystal" width="200" height="200"></button>
-                <button type="button" class="btn btn-primary btn-lg"> <img class="crystal-image" src="assets/images/crystals.jpg" alt="crystal" width="200" height="200"></button>
-                <button type="button" class="btn btn-primary btn-lg"> <img class="crystal-image" src="assets/images/crystals.jpg" alt="crystal" width="200" height="200"></button>
-                <button type="button" class="btn btn-primary btn-lg"> <img class="crystal-image" src="assets/images/crystals.jpg" alt="crystal" width="200" height="200"></button>
-        
-        </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm1">
-                Random number:<span id="number-to-guess"></span>
-            </div>
-            <div class="col-sm2">
-                <p id="total-score">Total Score:</p>
-                <p id="wins">Wins:</p>
-                <p id="losses">Losses:</p>
-            </div>
+            <img class="crystal-image" id="blue" src="assets/images/blueCrystal.jpg" alt="crystal" width="175" height="175"></button>
+            <img class="crystal-image" id="green" src="assets/images/greenCrystal.jpg" alt="crystal" width="175" height="175"></button>
+            <img class="crystal-image" id="red" src="assets/images/redCrystal.jpg" alt="crystal" width="175" height="175"></button>
+            <img class="crystal-image" id="yellow" src="assets/images/yellowCrystal1.jpg" alt="crystal" width="175" height="175"></button>
         </div>
     </div>
 
+    <div class="col-lg-2">
+        Random number:<span id="number-to-guess"></span>
+        <p id="total-score">Total Score:</p>
+    </div>
+        
+    <div class="col-lg-2">
+        <p id="wins">Wins:</p>
+        <p id="losses">Losses:</p>
+    </div>
+    </div>
 
+</div>
+    
+    
 <script src="assets/javascript/game.js"></script>
 </body>
 

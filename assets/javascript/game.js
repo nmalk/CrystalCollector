@@ -12,9 +12,9 @@ var totalScoreText = document.getElementById("total-score");
 var winsText = document.getElementById("wins");
 var lossesText = document.getElementById("losses");
 
-winsText.textContent= "wins:" + wins;
-lossesText.textContent ="losses:" + losses;
-totalScoreText.textContent = "total score:" + totalScore;
+winsText.textContent= "Wins:" + wins;
+lossesText.textContent ="Losses:" + losses;
+totalScoreText.textContent = "Total score:" + totalScore;
 randomNumberText.textContent = randomNum;
 
 
@@ -32,20 +32,20 @@ $(document).ready(function() {
 
       if (totalScore=== randomNum){
         wins++;
-        document.getElementById("wins").innerHTML = wins;
+        document.getElementById("wins").innerHTML = ("wins" + wins);
       }
       else if (totalScore!== randomNum){
         //restart game?
       }
       else  {
         losses++;
-        document.getElementById("losses").innerHTML = losses;
+        document.getElementById("losses").innerHTML = ("losses" + losses);
       } 
 
     });
 
   //Create random number to display in "random number" text
-$(".col-sm1").each(function(){
+$(".col-sm-4").each(function(){
   
   var randomNum =[Math.floor(Math.random()* (120-19)) + 19];
   randomNum = parseInt(randomNum);
