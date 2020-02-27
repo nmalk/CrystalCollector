@@ -1,0 +1,11 @@
+body {
+    background-color: lightgray !important;
+}
+
+.jumbotron {
+    border-radius: 10px !important;
+}
+img {
+    border-radius: 10px;
+}
+    

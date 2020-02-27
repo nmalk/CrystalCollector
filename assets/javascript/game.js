@@ -1,7 +1,24 @@
 
 //Create variables
+var crystal = {
+  blue: {
+    name: "Blue",
+    value: 0
+  },
+  green: {
+    name: "Green",
+    value: 0
+  },
+  red: {
+    name: "Red",
+    value: 0
+  },
+  yellow: {
+    name: "Yellow",
+    value: 0
+  },
+}
 var randomNum = 0;
-var crystalValue = 0;
 var totalScore = 0;
 var wins = 0;
 var losses = 0;
