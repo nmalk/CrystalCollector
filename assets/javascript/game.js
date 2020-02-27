@@ -55,17 +55,45 @@ var startGame = function() {
 
 // Respond to the clicks of the crystals
 var addValue = function(crystal) {
-  randomNumber = randomNumber + crystal.value;
+  yourScore = yourScore + crystal.value;
 
   //Change the HTML to reflect changes in currentScore
   $("#yourScore").html(yourScore);
 
   //call the checkWin function
-  checkWin();
+  checkScore();
 
-  console.log("Your score: " + randomNumber);
+  console.log("Your score: " + yourScore);
 }
 
+// Check if user won or lost and reset the game
+var checkScore = function() {
+  if(yourScore > randomNumber) {
+      alert("Sorry, You lost!");
+      console.log("You lost");
+
+      // Add to loss counter
+      losses++;
+
+      //Change the loss count HTML
+      $("#losses").html(losses);
+      //restart the game
+      startGame();
+  } 
+  else if (yourScore === randomNumber) {
+      alert("Congratulations, You won!");
+      console.log("You won");
+
+      //Add to win counter
+      wins++;
+
+      //Change the win count HTML
+      $("#wins").html(wins);
+      //restart the game
+      startGame();
+  }
+
+}
 
 // MAIN PROCCES
 // ********************************************************************
@@ -89,67 +117,3 @@ $("#red").click(function () {
 $("#yellow").click(function () {
         addValue(crystal.yellow);
 });
-
-
-
-
-
-
-
-
-
-
-
-//Create variables to hold references in the HTML
-// var randomNumberText = document.getElementById("number-to-guess");
-// var totalScoreText = document.getElementById("total-score");
-// var winsText = document.getElementById("wins");
-// var lossesText = document.getElementById("losses");
-
-// winsText.textContent= "Wins:" + wins;
-// lossesText.textContent ="Losses:" + losses;
-// totalScoreText.textContent = "Total score:" + totalScore;
-// randomNumberText.textContent = randomNum;
-
-
-
-//Create random number for crystalValue
-// $(document).ready(function() {
-  
-//     $("#crystals").on("click", function() {
-      
-//       var crystalValue ="";
-//         var crystalValue = [Math.floor(Math.random()*12) +1];
-//         crystalValue = parseInt(crystalValue);
-//         totalScore += crystalValue;
-//       console.log(crystalValue);
-
-//       if (totalScore=== randomNum){
-//         wins++;
-//         document.getElementById("wins").innerHTML = ("wins" + wins);
-//       }
-//       else if (totalScore!== randomNum){
-//         //restart game?
-//       }
-//       else  {
-//         losses++;
-//         document.getElementById("losses").innerHTML = ("losses" + losses);
-//       } 
-
-//     });
-
-//   //Create random number to display in "random number" text
-// $(".col-sm-4").each(function(){
-  
-//   var randomNum =[Math.floor(Math.random()* (120-19)) + 19];
-//   randomNum = parseInt(randomNum);
-//   $(this).addClass(randomNum.toString());
-//   document.getElementById("number-to-guess").innerHTML = randomNum;
-
-// console.log(randomNum);
-// });
-
-//   });
-
-
-
