@@ -25,7 +25,7 @@ This application is a number guessing game where a player has to match her or hi
    * The app also tracks and displays the number of wins and losses.
 
 
-* [Try it out](https://nmalk.github.io/GifTastic/)
+* [Try it out](https://nmalk.github.io/unit-4-game/)
 
 
 ## Technologies used
