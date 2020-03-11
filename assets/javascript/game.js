@@ -103,7 +103,6 @@ startGame();
 
 $("#blue").click(function () {
         addValue(crystal.blue);
-    
 });
 
 $("#green").click(function () {
