@@ -24,6 +24,7 @@ This application is a number guessing game where a player has to match her or hi
 
    * The app also tracks and displays the number of wins and losses.
 
+![CrystalCollector](/assets/images/CrystalCollector.jpg)
 
 * [Try it out](https://nmalk.github.io/unit-4-game/)
 
