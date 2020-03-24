@@ -17,8 +17,12 @@ p {
     text-shadow: black 1px 1px;
 }
 .text-center {
+    text-shadow: black 2px 3px;
+}
+.text {
     font-size: 25px;
     text-shadow: black 1px 2px;
+    margin-left: 125px;
 }
 p small {
     font-size: 15px;
