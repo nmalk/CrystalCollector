@@ -9,4 +9,10 @@ body {
 img {
     border-radius: 10px;
 }
+
+p {
+    color: wheat;
+    font-size: 15px;
+    font-weight: 700;
+}
     
