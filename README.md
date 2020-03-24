@@ -28,6 +28,8 @@ This application is a number guessing game where a player has to match her or hi
 
 ![CrystalCollector](/assets/images/CrystalCollector2.jpg)
 
+![CrystalCollector](/assets/images/CrystalCollector3.png)
+
 * [Try it out](https://nmalk.github.io/unit-4-game/)
 
 
